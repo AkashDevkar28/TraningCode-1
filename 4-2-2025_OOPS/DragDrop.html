@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag & Drop List with Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .list-group-item {
+            cursor: grab;
+        }
+        .dragging {
+            opacity: 0.5;
+            background: lightcoral;
+        }
+    </style>
+</head>
+
+<body class="bg-dark">
+
+    <div class="container mt-5">
+        <h2 class="text-center text-white bg-danger p-3 rounded">Drag & Drop List</h2>
+
+        <ul id="sortable-list" class="list-group">
+            <li class="list-group-item p-3" draggable="true">Item 1</li>
+            <li class="list-group-item p-3" draggable="true">Item 2</li>
+            <li class="list-group-item p-3" draggable="true">Item 3</li>
+            <li class="list-group-item p-3" draggable="true">Item 4</li>
+            <li class="list-group-item p-3" draggable="true">Item 5</li>
+        </ul>
+    </div>
+
+    <script src="DragDrop.js"></script>
+
+</body>
+</html>

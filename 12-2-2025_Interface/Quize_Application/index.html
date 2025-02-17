@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f7fc;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            padding-top: 50px;
+        }
+        #question-display {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .btn-secondary {
+            width: 100%;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+        .btn-secondary.active {
+            background-color: #007bff;
+            color: white;
+        }
+        .btn-primary {
+            width: 100%;
+            padding: 15px;
+            font-size: 1.2rem;
+        }
+        .quiz-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+        .btn-next {
+            display: none;
+            width: 100%;
+            padding: 15px;
+            background-color: #28a745;
+            color: white;
+            font-size: 1.2rem;
+        }
+        .btn-next:hover {
+            background-color: #218838;
+        }
+        #score-display {
+            display: none;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+   
+    <div class="quiz-container">
+      
+        <button id="start-quiz-button" class="btn btn-primary mb-4" onclick="startQuiz()">Start Quiz</button>
+
+       
+        <div id="question-display"></div>
+
+        <div id="answer-buttons"></div>
+
+
+        <button id="next-button" class="btn btn-next" onclick="nextQuestion()">Next Question</button>
+
+      
+        <div id="score-display">
+            <h3>Your Final Score: <span id="final-score"></span></h3>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="quize.js"></script>
+
+</body>
+</html>
