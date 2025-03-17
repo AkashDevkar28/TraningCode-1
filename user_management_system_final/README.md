@@ -52,3 +52,12 @@ export default tseslint.config({
   },
 })
 ```
+for user Emily
+username: emilys
+password: emilyspass
+
+
+
+admin Login
+username: admin
+password: admin123
